@@ -1104,6 +1104,38 @@ a:hover {
     animation-play-state: paused;
 }
 
+/* Nav Socials */
+.nav-socials {
+    display: flex;
+    gap: 1.25rem;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-socials a {
+    color: var(--text-muted);
+    transition: var(--transition-base);
+    display: flex;
+    align-items: center;
+}
+
+.nav-socials a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .nav-socials {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        margin-top: 1.5rem;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 @keyframes slide {
     from { transform: translateX(0); }
     to { transform: translateX(calc(-50% - 0.75rem)); }
