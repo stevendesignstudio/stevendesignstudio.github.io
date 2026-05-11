@@ -1064,3 +1064,124 @@ a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* --- Sliding Panes --- */
+.sliding-pane {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.sliding-pane::before,
+.sliding-pane::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sliding-pane::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.sliding-pane::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-primary), transparent);
+}
+
+.sliding-track {
+    display: flex;
+    width: max-content;
+    animation: slide 40s linear infinite;
+    gap: 1.5rem;
+}
+
+.sliding-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+
+/* Adjustments for sliding items */
+.portfolio-sliding .portfolio-item {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.styles-sliding .style-card {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+/* --- Testimonials --- */
+.testimonials-section {
+    background: var(--bg-secondary);
+    padding: var(--section-padding) 0;
+}
+
+.testimonial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 350px;
+    flex-shrink: 0;
+    transition: all 0.4s var(--ease-out);
+}
+
+.testimonial-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    background: var(--bg-card-hover);
+}
+
+.testimonial-stars {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.testimonial-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.testimonial-rating-num {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}

@@ -82,145 +82,99 @@
                 <button class="filter-tab" data-filter="suite">Full Suites</button>
             </div>
 
-            <!-- Portfolio Grid -->
-            <div class="portfolio-grid" id="portfolioGrid">
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up">
-                    <div class="portfolio-image">
-                        <img src="../01_wedding_botanical.png" alt="Watercolor Botanical Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Watercolor Botanical</h3>
-                            <p>Sage green & blush pink · Eucalyptus & roses</p>
+            <!-- Portfolio Sliding Pane -->
+            <div class="sliding-pane portfolio-sliding" data-animate="fade-up">
+                <div class="sliding-track" id="portfolioTrack">
+                    <!-- Original Items -->
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../01_wedding_botanical.png" alt="Botanical Wedding Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Wedding</span>
+                                <h3>Watercolor Botanical</h3>
+                                <p>Sage green and dusty rose · Eucalyptus and roses</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="50">
-                    <div class="portfolio-image">
-                        <img src="../02_wedding_art_deco.png" alt="Art Deco Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Art Deco Glamour</h3>
-                            <p>Gold on black · 1920s Gatsby era</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../02_wedding_art_deco.png" alt="Art Deco Wedding Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Wedding</span>
+                                <h3>Art Deco Glamour</h3>
+                                <p>Gold on black · 1920s Gatsby era</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="100">
-                    <div class="portfolio-image">
-                        <img src="../06_wedding_dark_luxury.png" alt="Dark Luxury Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Dark Luxury</h3>
-                            <p>Moody florals · Dutch Masters painterly</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../06_wedding_dark_luxury.png" alt="Dark Luxury Wedding Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Wedding</span>
+                                <h3>Dark Luxury</h3>
+                                <p>Moody florals · Flemish painterly style</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="150">
-                    <div class="portfolio-image">
-                        <img src="../07_wedding_boho_rustic.png" alt="Boho Rustic Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Boho Rustic</h3>
-                            <p>Pampas grass · Kraft paper · Terracotta</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../07_wedding_boho_rustic.png" alt="Boho Rustic Wedding Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Wedding</span>
+                                <h3>Boho Rustic</h3>
+                                <p>Pampas grass · Kraft paper · Terracotta</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up">
-                    <div class="portfolio-image">
-                        <img src="../08_wedding_minimalist.png" alt="Minimalist Modern Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Minimalist Modern</h3>
-                            <p>Clean lines · Gold accent · Editorial</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../08_wedding_minimalist.png" alt="Minimalist Wedding Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Wedding</span>
+                                <h3>Modern Minimalist</h3>
+                                <p>Clean lines · Gold accent · Editorial feel</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="50">
-                    <div class="portfolio-image">
-                        <img src="../09_wedding_coastal.png" alt="Coastal Mediterranean Wedding Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Wedding</span>
-                            <h3>Coastal Mediterranean</h3>
-                            <p>Lemons & olives · Amalfi Coast inspired</p>
+                    <div class="portfolio-item" data-category="birthday">
+                        <div class="portfolio-image">
+                            <img src="../03_birthday_kids_safari.png" alt="Safari Birthday Invitation" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-tag">Birthday</span>
+                                <h3>Safari Party</h3>
+                                <p>Cartoon animals · Playful colors</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="suite" data-animate="fade-up" data-delay="100">
-                    <div class="portfolio-image">
-                        <img src="../10_wedding_suite_rsvp.png" alt="Wedding RSVP Card" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Suite</span>
-                            <h3>RSVP Card</h3>
-                            <p>Botanical suite · Matching design language</p>
+                    <!-- Duplicate Items for Loop -->
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../01_wedding_botanical.png" alt="Botanical Wedding Invitation" loading="lazy">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="suite" data-animate="fade-up" data-delay="150">
-                    <div class="portfolio-image">
-                        <img src="../11_wedding_suite_menu.png" alt="Wedding Menu Card" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Suite</span>
-                            <h3>Menu Card</h3>
-                            <p>Botanical suite · Three-course layout</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../02_wedding_art_deco.png" alt="Art Deco Wedding Invitation" loading="lazy">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="suite" data-animate="fade-up">
-                    <div class="portfolio-image">
-                        <img src="../12_wedding_suite_thankyou.png" alt="Wedding Thank You Card" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Suite</span>
-                            <h3>Thank You Card</h3>
-                            <p>Botanical suite · Eucalyptus wreath</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../06_wedding_dark_luxury.png" alt="Dark Luxury Wedding Invitation" loading="lazy">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="50">
-                    <div class="portfolio-image">
-                        <img src="../03_birthday_kids_safari.png" alt="Kids Safari Birthday Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Birthday</span>
-                            <h3>Kids Safari Party</h3>
-                            <p>Cute cartoon animals · Cheerful colors</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../07_wedding_boho_rustic.png" alt="Boho Rustic Wedding Invitation" loading="lazy">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="100">
-                    <div class="portfolio-image">
-                        <img src="../13_birthday_teen_neon.png" alt="Teen Neon Birthday Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Birthday</span>
-                            <h3>Teen Neon Party</h3>
-                            <p>Sweet 16 · Neon glow · Gen Z aesthetic</p>
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="../08_wedding_minimalist.png" alt="Minimalist Wedding Invitation" loading="lazy">
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="150">
-                    <div class="portfolio-image">
-                        <img src="../04_birthday_adult_50th.png" alt="Adult 50th Birthday Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Birthday</span>
-                            <h3>Milestone 50th</h3>
-                            <p>Elegant black & gold · Premium feel</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="baby" data-animate="fade-up">
-                    <div class="portfolio-image">
-                        <img src="../05_baby_shower.png" alt="Baby Shower Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Baby</span>
-                            <h3>Baby Shower</h3>
-                            <p>Pastel watercolor animals · Tender & sweet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="baby" data-animate="fade-up" data-delay="50">
-                    <div class="portfolio-image">
-                        <img src="../14_gender_reveal.png" alt="Gender Reveal Invitation" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-tag">Baby</span>
-                            <h3>Gender Reveal</h3>
-                            <p>Pink & blue split · He or She?</p>
+                    <div class="portfolio-item" data-category="birthday">
+                        <div class="portfolio-image">
+                            <img src="../03_birthday_kids_safari.png" alt="Safari Birthday Invitation" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -274,64 +228,79 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Opinions</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Over 500 celebrations made even more special</p>
+            </div>
+            <div class="sliding-pane">
+                <div class="sliding-track" id="testimonialTrack">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Styles Showcase -->
     <section class="section styles-section" id="styles">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <p class="section-label">Design Language</p>
                 <h2 class="section-title">10 Signature Styles</h2>
-                <p class="section-subtitle">Choose your aesthetic — we'll bring it to life</p>
+                <p class="section-subtitle">Choose your aesthetic — we'll</p>
             </div>
-            <div class="styles-grid">
-                <div class="style-card" data-animate="fade-up" style="--accent: #B2BFA8">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #B2BFA8, #F4C2C2)"></div>
-                    <h3>Watercolor Botanical</h3>
-                    <p>Romantic · Organic · Garden Party</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #1A1A1A">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #1A1A1A, #C9A94E)"></div>
-                    <h3>Minimalist Modern</h3>
-                    <p>Clean · Sophisticated · Editorial</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="100" style="--accent: #D4AF37">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #0D0D0D, #D4AF37)"></div>
-                    <h3>Art Deco Glamour</h3>
-                    <p>1920s · Gatsby · Opulent Gold</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="150" style="--accent: #C67A4B">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #C67A4B, #9CAF88)"></div>
-                    <h3>Boho Rustic</h3>
-                    <p>Earthy · Free-Spirited · Pampas</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" style="--accent: #722F37">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #722F37, #0D0D0D)"></div>
-                    <h3>Dark Luxury</h3>
-                    <p>Dramatic · Moody · Dutch Masters</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #2E86AB">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #2E86AB, #FFD700)"></div>
-                    <h3>Coastal Mediterranean</h3>
-                    <p>Amalfi · Lemons · Sun-Drenched</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="100" style="--accent: #FF6B6B">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCBF5)"></div>
-                    <h3>Playful Whimsical</h3>
-                    <p>Fun · Colorful · Kid-Friendly</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="150" style="--accent: #A5A5A5">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #A5A5A5, #333333)"></div>
-                    <h3>Industrial Chic</h3>
-                    <p>Raw · Urban · Textural</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" style="--accent: #F7E7CE">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #F7E7CE, #8B4513)"></div>
-                    <h3>Vintage Storybook</h3>
-                    <p>Nostalgic · Hand-drawn · Classic</p>
-                </div>
-                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #0B3D91">
-                    <div class="style-swatch" style="background: linear-gradient(135deg, #0B3D91, #FC3D21, #000000)"></div>
-                    <h3>Space Adventure</h3>
-                    <p>Galactic · Sci-Fi · Futuristic</p>
+            <div class="sliding-pane styles-sliding" data-animate="fade-up">
+                <div class="sliding-track">
+                    <!-- Original Styles -->
+                    <div class="style-card" style="--accent: #B2BFA8">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #B2BFA8, #F4C2C2)"></div>
+                        <h3>Watercolor Botanical</h3>
+                        <p>Romantic · Organic · Garden Party</p>
+                    </div>
+                    <div class="style-card" style="--accent: #1A1A1A">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #1A1A1A, #C9A94E)"></div>
+                        <h3>Modern Minimalist</h3>
+                        <p>Clean · Sophisticated · Editorial</p>
+                    </div>
+                    <div class="style-card" style="--accent: #D4AF37">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #0D0D0D, #D4AF37)"></div>
+                        <h3>Art Deco Glamour</h3>
+                        <p>1920s · Gatsby · Opulent Gold</p>
+                    </div>
+                    <div class="style-card" style="--accent: #C67A4B">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #C67A4B, #9CAF88)"></div>
+                        <h3>Boho Rustic</h3>
+                        <p>Earthy · Free-spirited · Pampas</p>
+                    </div>
+                    <div class="style-card" style="--accent: #722F37">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #722F37, #0D0D0D)"></div>
+                        <h3>Dark Luxury</h3>
+                        <p>Dramatic · Moody · Flemish</p>
+                    </div>
+                    <!-- Duplicate for Loop -->
+                    <div class="style-card" style="--accent: #B2BFA8">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #B2BFA8, #F4C2C2)"></div>
+                        <h3>Watercolor Botanical</h3>
+                    </div>
+                    <div class="style-card" style="--accent: #1A1A1A">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #1A1A1A, #C9A94E)"></div>
+                        <h3>Modern Minimalist</h3>
+                    </div>
+                    <div class="style-card" style="--accent: #D4AF37">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #0D0D0D, #D4AF37)"></div>
+                        <h3>Art Deco Glamour</h3>
+                    </div>
+                    <div class="style-card" style="--accent: #C67A4B">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #C67A4B, #9CAF88)"></div>
+                        <h3>Boho Rustic</h3>
+                    </div>
+                    <div class="style-card" style="--accent: #722F37">
+                        <div class="style-swatch" style="background: linear-gradient(135deg, #722F37, #0D0D0D)"></div>
+                        <h3>Dark Luxury</h3>
+                    </div>
                 </div>
             </div>
         </div>

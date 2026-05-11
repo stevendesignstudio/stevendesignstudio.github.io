@@ -189,6 +189,76 @@ ${message}`;
             }
         });
     });
+    
+    // --- Testimonials Generation ---
+    const initTestimonials = () => {
+        const track = document.getElementById('testimonialTrack');
+        if (!track) return;
+
+        const isEn = document.documentElement.lang === 'en';
+
+        const names = isEn ? [
+            "Sophie White", "Mark Red", "Julia Smith", "Alex Richardson", "Ellen Smith",
+            "Matt Brown", "Francesca Miller", "Lawrence Moore", "Beatrice Romano", "Simon Hall",
+            "Martha Villa", "Andrew Lion", "Valerie Colombo", "Richard Marine", "Claire Greek",
+            "Freddie Mancini", "Ann Iron", "Gabriel Riva", "Sarah Donati", "Thomas Barber"
+        ] : [
+            "Sofia Bianchi", "Marco Rossi", "Giulia Esposito", "Alessandro Ricci", "Elena Ferrari",
+            "Matteo Bruno", "Francesca Conti", "Lorenzo Moretti", "Beatrice Romano", "Simone Gallo",
+            "Martina Villa", "Andrea Leone", "Valentina Colombo", "Riccardo Marini", "Chiara Greco",
+            "Federico Mancini", "Anna Ferri", "Gabriele Riva", "Sara Donati", "Tommaso Barbieri"
+        ];
+
+        const quotes = isEn ? [
+            "The invitations were simply magical.", "Unparalleled professionalism and creativity.",
+            "A fantastic experience, everything was perfect.", "Stunning designs and attention to detail.",
+            "Our guests were absolutely enchanted.", "Fast service and extremely high quality.",
+            "They understood our vision immediately.", "Beyond all our expectations.",
+            "Highly recommended for special events.", "Elegance and style in every detail.",
+            "The best design studio I've ever used.", "Excellent and precise communication.",
+            "They made our day unforgettable.", "Excelent paper quality and printing.",
+            "A touch of class for our event.", "Pure creativity and great availability.",
+            "Delivery times met and great files.", "A truly professional result.",
+            "The details made all the difference.", "We are so happy with our choice."
+        ] : [
+            "Gli inviti erano semplicemente magici.", "Professionalità e creatività senza pari.",
+            "Un'esperienza fantastica, tutto perfetto.", "Design stupendi e cura nei dettagli.",
+            "I nostri ospiti sono rimasti incantati.", "Servizio veloce e di altissima qualità.",
+            "Hanno capito subito la nostra visione.", "Oltre ogni nostra aspettativa.",
+            "Consigliatissimo per eventi speciali.", "Eleganza e stile in ogni dettaglio.",
+            "Il miglior studio di design mai provato.", "Comunicazione eccellente e precisa.",
+            "Hanno reso il nostro giorno indimenticabile.", "Qualità della carta e stampa eccelsa.",
+            "Un tocco di classe per il nostro evento.", "Creatività pura e grande disponibilità.",
+            "Tempi di consegna rispettati e ottimi file.", "Un risultato davvero professionale.",
+            "I dettagli hanno fatto la differenza.", "Siamo felici della scelta fatta."
+        ];
+
+        // Shuffle arrays
+        const shuffled = names.map((name, i) => ({ name, quote: quotes[i % quotes.length] }))
+                             .sort(() => Math.random() - 0.5);
+
+        const createCard = (data) => {
+            const rating = (Math.random() * 0.5 + 4.5).toFixed(1);
+            const initials = data.name.split(' ').map(n => n[0]).join('');
+            return `
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"${data.quote}"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">${initials}</div>
+                        <div class="testimonial-name">${data.name}</div>
+                        <div class="testimonial-rating-num">${rating}/5</div>
+                    </div>
+                </div>
+            `;
+        };
+
+        // Populate track twice for infinite scroll
+        let content = shuffled.map(createCard).join('');
+        track.innerHTML = content + content;
+    };
+
+    initTestimonials();
 
 });
 
