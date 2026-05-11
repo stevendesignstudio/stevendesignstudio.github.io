@@ -1,0 +1,54 @@
+﻿{
+    "$schema":  "../../project.meta.schema.json",
+    "schemaVersion":  1,
+    "name":  "deploy",
+    "title":  "Portfolio — Sample Designs",
+    "kind":  "git-repository",
+    "status":  "unknown",
+    "category":  "app-or-demo",
+    "description":  "",
+    "tags":  [
+                 "app-or-demo"
+             ],
+    "priority":  "unset",
+    "owner":  "",
+    "paths":  {
+                  "relative":  "graphic_design/deploy",
+                  "absolute":  "F:\\learnbydoingwithsteven\\graphic_design\\deploy"
+              },
+    "repo":  {
+                 "hasGit":  true,
+                 "remote":  "https://github.com/stevendesignstudio/stevendesignstudio.github.io.git"
+             },
+    "stack":  [
+                  "static-html"
+              ],
+    "entrypoints":  {
+                        "readme":  "README.md",
+                        "web":  "index.html"
+                    },
+    "signals":  {
+                    "hasReadme":  true,
+                    "hasPackageJson":  false,
+                    "hasIndexHtml":  true,
+                    "hasViteConfig":  false,
+                    "hasNextConfig":  false,
+                    "hasPython":  false,
+                    "hasNotebooks":  false
+                },
+    "children":  {
+                     "count":  2,
+                     "immediateProjectSignalCount":  1
+                 },
+    "activity":  {
+                     "lastModifiedLocal":  "2026-05-11T22:40:53",
+                     "inferredActivity":  "hot"
+                 },
+    "notes":  "",
+    "metadata":  {
+                     "generated":  true,
+                     "generatedAt":  "2026-05-11T20:53:39Z",
+                     "generatedBy":  "tools/update_project_metadata.ps1",
+                     "confidence":  "inferred"
+                 }
+}

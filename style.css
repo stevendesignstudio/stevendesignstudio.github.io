@@ -618,12 +618,57 @@ a:hover {
 .service-price {
     font-size: 0.9rem;
     color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
 }
 
 .service-price strong {
     font-size: 1.5rem;
     color: var(--accent);
     font-weight: 500;
+}
+
+.service-price small {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+    color: var(--text-muted);
+}
+
+/* --- Socials in Contact --- */
+.contact-socials {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.contact-socials p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.social-links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.3s var(--ease-out);
+}
+
+.social-link-item:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(201, 169, 78, 0.05);
 }
 
 /* --- Styles Grid --- */

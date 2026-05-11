@@ -149,12 +149,24 @@ ${message}`;
         // Trigger mailto link
         window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+        // Provide visual feedback
+        submitBtn.textContent = 'Redirecting to Email...';
+        
+        const successMsg = document.createElement('p');
+        successMsg.style.color = 'var(--accent)';
+        successMsg.style.fontSize = '0.9rem';
+        successMsg.style.marginTop = '1rem';
+        successMsg.style.textAlign = 'center';
+        successMsg.textContent = 'Opening your email client. Please finish and send the email there!';
+        form.appendChild(successMsg);
+
         // Reset UI after a short delay
         setTimeout(() => {
             submitBtn.textContent = originalText;
             submitBtn.style.opacity = '1';
             submitBtn.disabled = false;
-        }, 2000);
+            setTimeout(() => successMsg.remove(), 5000);
+        }, 3000);
     });
 
     // --- Smooth scroll for anchor links ---
