@@ -148,6 +148,7 @@ DESIGN PREFERENCES:
 Style: ${designStyle}
 Color Palette: ${colorPalette || 'Not specified'}
 Moods: ${moods || 'Not specified'}
+Terms: Accepted (Required for submission)
 
 Message:
 ${message}`;
