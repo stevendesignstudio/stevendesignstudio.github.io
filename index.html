@@ -318,6 +318,21 @@
                     <h3>Playful Whimsical</h3>
                     <p>Fun · Colorful · Kid-Friendly</p>
                 </div>
+                <div class="style-card" data-animate="fade-up" data-delay="150" style="--accent: #A5A5A5">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #A5A5A5, #333333)"></div>
+                    <h3>Industrial Chic</h3>
+                    <p>Raw · Urban · Textural</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" style="--accent: #F7E7CE">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #F7E7CE, #8B4513)"></div>
+                    <h3>Vintage Storybook</h3>
+                    <p>Nostalgic · Hand-drawn · Classic</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #0B3D91">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #0B3D91, #FC3D21, #000000)"></div>
+                    <h3>Space Adventure</h3>
+                    <p>Galactic · Sci-Fi · Futuristic</p>
+                </div>
             </div>
         </div>
     </section>
@@ -402,6 +417,41 @@
                         <div class="form-group">
                             <label for="eventDate">Event Date</label>
                             <input type="date" id="eventDate" name="eventDate">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="designStyle">Preferred Design Style</label>
+                            <select id="designStyle" name="designStyle" required>
+                                <option value="">Select a style</option>
+                                <option value="watercolor">Watercolor Botanical</option>
+                                <option value="minimalist">Minimalist Modern</option>
+                                <option value="art-deco">Art Deco Glamour</option>
+                                <option value="boho">Boho Rustic</option>
+                                <option value="dark-luxury">Dark Luxury</option>
+                                <option value="mediterranean">Coastal Mediterranean</option>
+                                <option value="whimsical">Playful Whimsical</option>
+                                <option value="industrial">Industrial Chic</option>
+                                <option value="vintage">Vintage Storybook</option>
+                                <option value="space">Space Adventure</option>
+                                <option value="custom">Custom Style (Describe below)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="colorPalette">Color Palette</label>
+                            <input type="text" id="colorPalette" name="colorPalette" placeholder="e.g. Sage Green, Gold, Cream">
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label>Desired Mood (Choose all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="elegant"> Elegant</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="playful"> Playful</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="romantic"> Romantic</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="modern"> Modern</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="rustic"> Rustic</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="bold"> Bold</label>
+                            <label class="checkbox-item"><input type="checkbox" name="mood" value="vintage"> Vintage</label>
                         </div>
                     </div>
                     <div class="form-group full">

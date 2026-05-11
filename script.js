@@ -131,6 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const eventType = document.getElementById('eventType').value;
         const eventDate = document.getElementById('eventDate').value;
+        const designStyle = document.getElementById('designStyle').value;
+        const colorPalette = document.getElementById('colorPalette').value;
+        const moodElements = document.querySelectorAll('input[name="mood"]:checked');
+        const moods = Array.from(moodElements).map(el => el.value).join(', ');
         const message = document.getElementById('message').value;
 
         // Build email content
@@ -139,6 +143,11 @@ document.addEventListener('DOMContentLoaded', () => {
 Email: ${email}
 Event Type: ${eventType}
 Event Date: ${eventDate || 'Not specified'}
+
+DESIGN PREFERENCES:
+Style: ${designStyle}
+Color Palette: ${colorPalette || 'Not specified'}
+Moods: ${moods || 'Not specified'}
 
 Message:
 ${message}`;
