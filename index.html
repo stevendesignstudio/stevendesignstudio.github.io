@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Design Studio — AI-Powered Event Stationery</title>
+    <meta name="description" content="Premium AI-powered graphic design for weddings, birthdays, and celebrations. Custom invitations, stationery suites, and event branding by Steven Design Studio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <span class="preloader-text">Steven Design Studio</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="nav-logo-mark">S</span>
+                <span class="nav-logo-text">Steven Design Studio</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="it/index.html" class="nav-link">Italian</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#styles" class="nav-link">Styles</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link" id="navContact">Get in Touch</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-tagline" data-animate="fade-up">AI-Powered Design Studio</p>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                Beautiful Designs<br>
+                for Life's <span class="hero-accent">Special Moments</span>
+            </h1>
+            <p class="hero-description" data-animate="fade-up" data-delay="200">
+                Premium event stationery crafted with AI precision and human artistry.
+                Weddings · Birthdays · Celebrations
+            </p>
+            <div class="hero-cta" data-animate="fade-up" data-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline">Start Your Project</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Portfolio</p>
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-subtitle">A curated selection of AI-crafted designs across styles and occasions</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs" data-animate="fade-up">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="wedding">Weddings</button>
+                <button class="filter-tab" data-filter="birthday">Birthdays</button>
+                <button class="filter-tab" data-filter="baby">Baby Events</button>
+                <button class="filter-tab" data-filter="suite">Full Suites</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="01_wedding_botanical.png" alt="Watercolor Botanical Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Watercolor Botanical</h3>
+                            <p>Sage green & blush pink · Eucalyptus & roses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="02_wedding_art_deco.png" alt="Art Deco Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Art Deco Glamour</h3>
+                            <p>Gold on black · 1920s Gatsby era</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="06_wedding_dark_luxury.png" alt="Dark Luxury Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Dark Luxury</h3>
+                            <p>Moody florals · Dutch Masters painterly</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="07_wedding_boho_rustic.png" alt="Boho Rustic Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Boho Rustic</h3>
+                            <p>Pampas grass · Kraft paper · Terracotta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="08_wedding_minimalist.png" alt="Minimalist Modern Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Minimalist Modern</h3>
+                            <p>Clean lines · Gold accent · Editorial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="09_wedding_coastal.png" alt="Coastal Mediterranean Wedding Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Wedding</span>
+                            <h3>Coastal Mediterranean</h3>
+                            <p>Lemons & olives · Amalfi Coast inspired</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="suite" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="10_wedding_suite_rsvp.png" alt="Wedding RSVP Card" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Suite</span>
+                            <h3>RSVP Card</h3>
+                            <p>Botanical suite · Matching design language</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="suite" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="11_wedding_suite_menu.png" alt="Wedding Menu Card" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Suite</span>
+                            <h3>Menu Card</h3>
+                            <p>Botanical suite · Three-course layout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="suite" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="12_wedding_suite_thankyou.png" alt="Wedding Thank You Card" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Suite</span>
+                            <h3>Thank You Card</h3>
+                            <p>Botanical suite · Eucalyptus wreath</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="03_birthday_kids_safari.png" alt="Kids Safari Birthday Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Birthday</span>
+                            <h3>Kids Safari Party</h3>
+                            <p>Cute cartoon animals · Cheerful colors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="13_birthday_teen_neon.png" alt="Teen Neon Birthday Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Birthday</span>
+                            <h3>Teen Neon Party</h3>
+                            <p>Sweet 16 · Neon glow · Gen Z aesthetic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="birthday" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="04_birthday_adult_50th.png" alt="Adult 50th Birthday Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Birthday</span>
+                            <h3>Milestone 50th</h3>
+                            <p>Elegant black & gold · Premium feel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="baby" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="05_baby_shower.png" alt="Baby Shower Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Baby</span>
+                            <h3>Baby Shower</h3>
+                            <p>Pastel watercolor animals · Tender & sweet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="baby" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="14_gender_reveal.png" alt="Gender Reveal Invitation" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Baby</span>
+                            <h3>Gender Reveal</h3>
+                            <p>Pink & blue split · He or She?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Services</p>
+                <h2 class="section-title">What We Create</h2>
+                <p class="section-subtitle">From a single invitation to a complete stationery suite</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-icon">🥂</div>
+                    <h3 class="service-title">Wedding Suites</h3>
+                    <p class="service-desc">Complete stationery from Save the Date through Thank You cards. 6 signature styles available.</p>
+                    <div class="service-items">
+                        <span>Invitations</span><span>Save the Dates</span><span>RSVP Cards</span>
+                        <span>Menu Cards</span><span>Place Cards</span><span>Welcome Signs</span>
+                        <span>Seating Charts</span><span>Programs</span><span>Thank You Cards</span>
+                    </div>
+                    <div class="service-price">From <strong>€150</strong></div>
+                </div>
+                <div class="service-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">🎂</div>
+                    <h3 class="service-title">Birthday Parties</h3>
+                    <p class="service-desc">Fun, themed designs for all ages — from kids' safari adventures to elegant milestone celebrations.</p>
+                    <div class="service-items">
+                        <span>Invitations</span><span>Welcome Signs</span><span>Banners</span>
+                        <span>Cupcake Toppers</span><span>Favor Tags</span><span>Photo Props</span>
+                        <span>Social Media</span><span>Thank You Cards</span>
+                    </div>
+                    <div class="service-price">From <strong>€50</strong></div>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">👶</div>
+                    <h3 class="service-title">Baby Events</h3>
+                    <p class="service-desc">Tender, sentimental designs for baby showers, gender reveals, christenings, and first birthdays.</p>
+                    <div class="service-items">
+                        <span>Invitations</span><span>Game Cards</span><span>Advice Cards</span>
+                        <span>Welcome Signs</span><span>Favor Tags</span><span>Thank You Cards</span>
+                    </div>
+                    <div class="service-price">From <strong>€80</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Styles Showcase -->
+    <section class="section styles-section" id="styles">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Design Language</p>
+                <h2 class="section-title">7 Signature Styles</h2>
+                <p class="section-subtitle">Choose your aesthetic — we'll bring it to life</p>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card" data-animate="fade-up" style="--accent: #B2BFA8">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #B2BFA8, #F4C2C2)"></div>
+                    <h3>Watercolor Botanical</h3>
+                    <p>Romantic · Organic · Garden Party</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #1A1A1A">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #1A1A1A, #C9A94E)"></div>
+                    <h3>Minimalist Modern</h3>
+                    <p>Clean · Sophisticated · Editorial</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="100" style="--accent: #D4AF37">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #0D0D0D, #D4AF37)"></div>
+                    <h3>Art Deco Glamour</h3>
+                    <p>1920s · Gatsby · Opulent Gold</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="150" style="--accent: #C67A4B">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #C67A4B, #9CAF88)"></div>
+                    <h3>Boho Rustic</h3>
+                    <p>Earthy · Free-Spirited · Pampas</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" style="--accent: #722F37">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #722F37, #0D0D0D)"></div>
+                    <h3>Dark Luxury</h3>
+                    <p>Dramatic · Moody · Dutch Masters</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="50" style="--accent: #2E86AB">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #2E86AB, #FFD700)"></div>
+                    <h3>Coastal Mediterranean</h3>
+                    <p>Amalfi · Lemons · Sun-Drenched</p>
+                </div>
+                <div class="style-card" data-animate="fade-up" data-delay="100" style="--accent: #FF6B6B">
+                    <div class="style-swatch" style="background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCBF5)"></div>
+                    <h3>Playful Whimsical</h3>
+                    <p>Fun · Colorful · Kid-Friendly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">How It Works</p>
+                <h2 class="section-title">From Brief to Beautiful</h2>
+                <p class="section-subtitle">A streamlined process that delivers stunning results in 7–10 days</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-animate="fade-up">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Share Your Vision</h3>
+                        <p>Tell us about your event, your style preferences, and your color palette. Share Pinterest boards, inspiration photos, or just describe the mood.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="100">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>We Design Concepts</h3>
+                        <p>Using cutting-edge AI and professional design expertise, we create 3–4 unique concept directions tailored to your vision.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="200">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Refine & Perfect</h3>
+                        <p>We refine your chosen concept with professional typography, precise layouts, and your exact text. Revisions included until you love it.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="300">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Deliver Print-Ready</h3>
+                        <p>Receive your designs in both print-ready (PDF with bleed & crop marks) and digital formats (PNG/JPG for screens & social media).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-card" data-animate="fade-up">
+                <div class="section-header">
+                    <p class="section-label">Let's Create Together</p>
+                    <h2 class="section-title">Ready to Start?</h2>
+                    <p class="section-subtitle">Tell us about your event and we'll send you a custom quote within 24 hours.</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">Event Type</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select event type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="baby-shower">Baby Shower</option>
+                                <option value="gender-reveal">Gender Reveal</option>
+                                <option value="christening">Christening / Baptism</option>
+                                <option value="graduation">Graduation</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Event Date</label>
+                            <input type="date" id="eventDate" name="eventDate">
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="message">Tell Us About Your Vision</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Describe your style preferences, color palette, any inspiration..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="nav-logo-mark">S</span>
+                <span>Steven Design Studio</span>
+            </div>
+            <p class="footer-copy">© 2026 Steven Design Studio · Learn By Doing With Steven 数能生智</p>
+            <div class="footer-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
