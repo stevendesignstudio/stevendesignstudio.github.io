@@ -121,24 +121,40 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Simulate form submission
-        submitBtn.textContent = 'Sending...';
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Opening Email...';
         submitBtn.disabled = true;
         submitBtn.style.opacity = '0.6';
 
-        setTimeout(() => {
-            submitBtn.textContent = '✓ Request Sent!';
-            submitBtn.style.background = '#2d8a4e';
-            submitBtn.style.opacity = '1';
+        // Gather form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const eventType = document.getElementById('eventType').value;
+        const eventDate = document.getElementById('eventDate').value;
+        const message = document.getElementById('message').value;
 
-            // Reset after 3s
-            setTimeout(() => {
-                submitBtn.textContent = 'Send Request';
-                submitBtn.style.background = '';
-                submitBtn.disabled = false;
-                form.reset();
-            }, 3000);
-        }, 1200);
+        // Build email content
+        const subject = `Design Inquiry: ${eventType} from ${name}`;
+        const body = `Name: ${name}
+Email: ${email}
+Event Type: ${eventType}
+Event Date: ${eventDate || 'Not specified'}
+
+Message:
+${message}`;
+        
+        // Target email address - YOU SHOULD UPDATE THIS
+        const targetEmail = "wjbear2020@gmail.com";
+
+        // Trigger mailto link
+        window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Reset UI after a short delay
+        setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.style.opacity = '1';
+            submitBtn.disabled = false;
+        }, 2000);
     });
 
     // --- Smooth scroll for anchor links ---
