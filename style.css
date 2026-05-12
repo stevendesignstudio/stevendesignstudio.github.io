@@ -819,15 +819,15 @@ a:hover {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    padding: 0.875rem 1rem;
+    padding: 0.875rem 1.25rem;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     outline: none;
-    transition: border-color 0.3s var(--ease-out);
+    transition: all 0.3s var(--ease-out);
     resize: vertical;
 }
 
@@ -835,6 +835,8 @@ a:hover {
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0 4px var(--accent-glow);
 }
 
 .checkbox-group {
@@ -868,17 +870,38 @@ a:hover {
     margin: 0;
     accent-color: var(--accent);
 }
+.form-group select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%239a9a9e' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23c9a94e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 1rem center;
-    padding-right: 2.5rem;
+    background-position: right 1.25rem center;
+    padding-right: 3rem;
 }
 
 .form-group select option {
-    background: var(--bg-card);
+    background: #1a1a1e;
     color: var(--text-primary);
+    padding: 1rem;
+}
+
+/* Date Picker Elegance */
+.form-group input[type="date"] {
+    position: relative;
+    appearance: none;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z' stroke='%23c9a94e' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.6947 13.7H15.7037M15.6947 16.7H15.7037M11.9955 13.7H12.0045M11.9955 16.7H12.0045M8.29431 13.7H8.30329M8.29431 16.7H8.30329' stroke='%23c9a94e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: sepia(1) saturate(5) hue-rotate(10deg); /* Fine-tune to match gold */
+    opacity: 0.8;
+    transition: opacity 0.3s var(--ease-out);
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
 }
 
 /* --- Footer --- */
